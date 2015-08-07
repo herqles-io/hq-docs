@@ -13,17 +13,6 @@ Some APIs calls will be ignored depending on the identity and assignment driver 
 
    Request an API token.
 
-   :json string username: the username to authenticate as
-   :json string password: the password to use during authentication
-
-   :>json string token: the authentication token
-   :>json long expire_at: unix time in milliseconds when the token will expire
-
-   :statuscode 200: successfully received an authentication token
-   :statuscode 400: missing json parameters
-   :statuscode 401: Invalid username or password
-   :statuscode 404: User assignment does not exist
-
    **Example request**:
 
    .. sourcecode:: http
@@ -47,21 +36,20 @@ Some APIs calls will be ignored depending on the identity and assignment driver 
        "expire_at": 14389774893
      }
 
+   :json string username: the username to authenticate as
+   :json string password: the password to use during authentication
+
+   :>json string token: the authentication token
+   :>json long expire_at: unix time in milliseconds when the token will expire
+
+   :statuscode 200: successfully received an authentication token
+   :statuscode 400: missing json parameters
+   :statuscode 401: Invalid username or password
+   :statuscode 404: User assignment does not exist
+
 .. http:post:: /user/add
 
    Add a new user.
-
-   :json string username: the username for the user
-   :json string password: the password for the user
-
-   :reqheader X-Auth-Token: Authentication Token
-
-   :>json boolean $username: will always be True
-   :>json boolean identity: if the user identity was created
-   :>json boolean assignment: if the user assignment was created
-
-   :statuscode 200: successfully added a new user
-   :statuscode 400: missing json parameters
 
    **Example request**:
 
@@ -86,6 +74,18 @@ Some APIs calls will be ignored depending on the identity and assignment driver 
         "identity": True,
         "assignment": True
       }
+
+   :json string username: the username for the user
+   :json string password: the password for the user
+
+   :reqheader X-Auth-Token: Authentication Token
+
+   :>json boolean $username: will always be True
+   :>json boolean identity: if the user identity was created
+   :>json boolean assignment: if the user assignment was created
+
+   :statuscode 200: successfully added a new user
+   :statuscode 400: missing json parameters
 
 Workers
 -------
