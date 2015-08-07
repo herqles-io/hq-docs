@@ -2,12 +2,12 @@
 
 Documentation for Herqles
 
-## Building Locally
-
-To generate documentation run: `make html`
-
 ## Viewing the documentation locally
+
 ```
-pip install sphinx_rtd_theme
+git clone https://github.com/herqles-io/hq-docs.git
+cd hq-docs
+pip install -r requirements.txt
+make html
 sphinx-autobuild . _build_html
 ```

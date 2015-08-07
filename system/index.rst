@@ -1,0 +1,7 @@
+System
+======
+
+.. toctree::
+
+   architecture
+   message

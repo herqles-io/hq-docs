@@ -1,0 +1,6 @@
+Manager
+=======
+
+.. toctree::
+
+   api

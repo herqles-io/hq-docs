@@ -6,17 +6,17 @@
 Introduction to Herqles
 =======================
 
-Contents:
-
 .. toctree::
+   :caption: Table of Contents
    :maxdepth: 2
 
+   quickstart
+   system/index
+   manager/index
+   framework
+   worker
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+   :caption: Supported Frameworks
+   :maxdepth: 2
 
