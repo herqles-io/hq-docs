@@ -3,4 +3,4 @@ Manager
 
 .. toctree::
 
-   api
+   api/index
