@@ -7,3 +7,6 @@ To get a token please reference the Users API.
 .. toctree::
 
    users
+   workers
+   jobs
+   tasks
