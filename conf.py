@@ -55,8 +55,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Herqles'
-copyright = u'2015, Ryan Belgrave'
-author = u'Ryan Belgrave'
+author = u'CoverMyMeds'
+copyright = u'2015, '+author
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -238,7 +238,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'Herqles.tex', u'Herqles Documentation',
-   u'Ryan Belgrave', 'manual'),
+   author, 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
