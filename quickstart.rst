@@ -32,7 +32,7 @@ Installation
 
 .. code-block:: bash
 
-   source /var/lib/herqles/venv/activate
+   source /var/lib/herqles/venv/bin/activate
    pip install hq-manager hq-framework hq-worker hq-cli
 
 * Optionally install any Framework and Worker implementations.
